@@ -5,9 +5,9 @@ int M = Convert.ToInt32(Console.ReadLine());
 int[] GetArray (int size, int minRandom, int maxRandom)
 {
     int [] result = new int[size];
-    for (int i = 0; i < result.Length; i++) // result.Length = size
+    for (int i = 0; i < result.Length; i++)
     {
-        result[i] = new Random().Next(minRandom,maxRandom + 1); // [-9;9]
+        result[i] = new Random().Next(minRandom,maxRandom + 1);
     }
     return result;
 }
